@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hcatoolbatch", "hcatoolbatch.csproj", "{1FFB7D1E-EE2E-4201-B531-D46A14347632}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hactoolbatch", "hactoolbatch.csproj", "{1FFB7D1E-EE2E-4201-B531-D46A14347632}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
