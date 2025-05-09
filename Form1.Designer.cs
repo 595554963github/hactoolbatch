@@ -1,4 +1,4 @@
-﻿namespace HactoolUnpacker
+namespace HactoolUnpacker
 {
     partial class Form1
     {
@@ -15,82 +15,99 @@
 
         private void InitializeComponent()
         {
-            this.rtbOutput = new System.Windows.Forms.RichTextBox();
-            this.btnSelectXci = new System.Windows.Forms.Button();
-            this.btnUnpackXCI = new System.Windows.Forms.Button();
-            this.btnSelectNca = new System.Windows.Forms.Button();
-            this.btnUnpackNCA = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            rtbOutput = new RichTextBox();
+            btnSelectXci = new Button();
+            btnUnpackXCI = new Button();
+            btnSelectNca = new Button();
+            btnUnpackNCA = new Button();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // rtbOutput
             // 
-            this.rtbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbOutput.Location = new System.Drawing.Point(12, 12);
-            this.rtbOutput.Name = "rtbOutput";
-            this.rtbOutput.Size = new System.Drawing.Size(560, 300);
-            this.rtbOutput.TabIndex = 0;
-            this.rtbOutput.Text = "";
+            rtbOutput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            rtbOutput.Location = new Point(14, 17);
+            rtbOutput.Margin = new Padding(4, 4, 4, 4);
+            rtbOutput.Name = "rtbOutput";
+            rtbOutput.Size = new Size(653, 407);
+            rtbOutput.TabIndex = 0;
+            rtbOutput.Text = "";
             // 
             // btnSelectXci
             // 
-            this.btnSelectXci.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSelectXci.Location = new System.Drawing.Point(12, 318);
-            this.btnSelectXci.Name = "btnSelectXci";
-            this.btnSelectXci.Size = new System.Drawing.Size(120, 30);
-            this.btnSelectXci.TabIndex = 1;
-            this.btnSelectXci.Text = "选择XCI文件";
-            this.btnSelectXci.UseVisualStyleBackColor = true;
-            this.btnSelectXci.Click += new System.EventHandler(this.btnSelectXci_Click);
+            btnSelectXci.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnSelectXci.Location = new Point(14, 450);
+            btnSelectXci.Margin = new Padding(4, 4, 4, 4);
+            btnSelectXci.Name = "btnSelectXci";
+            btnSelectXci.Size = new Size(140, 42);
+            btnSelectXci.TabIndex = 1;
+            btnSelectXci.Text = "选择XCI文件";
+            btnSelectXci.UseVisualStyleBackColor = true;
+            btnSelectXci.Click += btnSelectXci_Click;
             // 
             // btnUnpackXCI
             // 
-            this.btnUnpackXCI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUnpackXCI.Location = new System.Drawing.Point(138, 318);
-            this.btnUnpackXCI.Name = "btnUnpackXCI";
-            this.btnUnpackXCI.Size = new System.Drawing.Size(120, 30);
-            this.btnUnpackXCI.TabIndex = 2;
-            this.btnUnpackXCI.Text = "解包XCI";
-            this.btnUnpackXCI.UseVisualStyleBackColor = true;
-            this.btnUnpackXCI.Click += new System.EventHandler(this.btnUnpackXCI_Click);
+            btnUnpackXCI.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnUnpackXCI.Location = new Point(161, 450);
+            btnUnpackXCI.Margin = new Padding(4, 4, 4, 4);
+            btnUnpackXCI.Name = "btnUnpackXCI";
+            btnUnpackXCI.Size = new Size(140, 42);
+            btnUnpackXCI.TabIndex = 2;
+            btnUnpackXCI.Text = "解包XCI";
+            btnUnpackXCI.UseVisualStyleBackColor = true;
+            btnUnpackXCI.Click += btnUnpackXCI_Click;
             // 
             // btnSelectNca
             // 
-            this.btnSelectNca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSelectNca.Location = new System.Drawing.Point(264, 318);
-            this.btnSelectNca.Name = "btnSelectNca";
-            this.btnSelectNca.Size = new System.Drawing.Size(120, 30);
-            this.btnSelectNca.TabIndex = 3;
-            this.btnSelectNca.Text = "选择NCA文件";
-            this.btnSelectNca.UseVisualStyleBackColor = true;
-            this.btnSelectNca.Click += new System.EventHandler(this.btnSelectNca_Click);
+            btnSelectNca.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnSelectNca.Location = new Point(308, 450);
+            btnSelectNca.Margin = new Padding(4, 4, 4, 4);
+            btnSelectNca.Name = "btnSelectNca";
+            btnSelectNca.Size = new Size(140, 42);
+            btnSelectNca.TabIndex = 3;
+            btnSelectNca.Text = "选择NCA文件";
+            btnSelectNca.UseVisualStyleBackColor = true;
+            btnSelectNca.Click += btnSelectNca_Click;
             // 
             // btnUnpackNCA
             // 
-            this.btnUnpackNCA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUnpackNCA.Location = new System.Drawing.Point(390, 318);
-            this.btnUnpackNCA.Name = "btnUnpackNCA";
-            this.btnUnpackNCA.Size = new System.Drawing.Size(120, 30);
-            this.btnUnpackNCA.TabIndex = 4;
-            this.btnUnpackNCA.Text = "解包NCA";
-            this.btnUnpackNCA.UseVisualStyleBackColor = true;
-            this.btnUnpackNCA.Click += new System.EventHandler(this.btnUnpackNCA_Click);
+            btnUnpackNCA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnUnpackNCA.Location = new Point(455, 450);
+            btnUnpackNCA.Margin = new Padding(4, 4, 4, 4);
+            btnUnpackNCA.Name = "btnUnpackNCA";
+            btnUnpackNCA.Size = new Size(140, 42);
+            btnUnpackNCA.TabIndex = 4;
+            btnUnpackNCA.Text = "解包NCA";
+            btnUnpackNCA.UseVisualStyleBackColor = true;
+            btnUnpackNCA.Click += btnUnpackNCA_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(161, 428);
+            label1.Name = "label1";
+            label1.Size = new Size(287, 17);
+            label1.TabIndex = 5;
+            label1.Text = "注:解包前请把rom放到一个不含中文的根目录！！！";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
-            this.Controls.Add(this.btnUnpackNCA);
-            this.Controls.Add(this.btnSelectNca);
-            this.Controls.Add(this.btnUnpackXCI);
-            this.Controls.Add(this.btnSelectXci);
-            this.Controls.Add(this.rtbOutput);
-            this.MinimumSize = new System.Drawing.Size(600, 400);
-            this.Name = "Form1";
-            this.Text = "Hactool解包工具";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(681, 511);
+            Controls.Add(label1);
+            Controls.Add(btnUnpackNCA);
+            Controls.Add(btnSelectNca);
+            Controls.Add(btnUnpackXCI);
+            Controls.Add(btnSelectXci);
+            Controls.Add(rtbOutput);
+            Margin = new Padding(4, 4, 4, 4);
+            MinimumSize = new Size(697, 550);
+            Name = "Form1";
+            Text = "Hactool解包工具";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private System.Windows.Forms.RichTextBox rtbOutput;
@@ -98,5 +115,6 @@
         private System.Windows.Forms.Button btnUnpackXCI;
         private System.Windows.Forms.Button btnSelectNca;
         private System.Windows.Forms.Button btnUnpackNCA;
+        private Label label1;
     }
 }
